@@ -66,6 +66,8 @@ set scrolloff=3
 let mapleader = ","
 
 " Shortcuts
+au Filetype php noremap ; :!php -l %<CR>
+au Filetype ruby noremap ; :!ruby -c %<CR>
 
 " Scrolling speed
 nnoremap <C-e> 5<C-e>
