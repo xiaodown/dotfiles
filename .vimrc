@@ -66,8 +66,9 @@ set scrolloff=3
 let mapleader = ","
 
 " Shortcuts
-au Filetype php noremap ; :!php -l %<CR>
-au Filetype ruby noremap ; :!ruby -c %<CR>
+au Filetype php        noremap ; :!php -l %<CR>
+au Filetype ruby       noremap ; :!ruby -c %<CR>
+au Filetype javascript noremap ; :JSLintUpdate<CR>
 
 " Scrolling speed
 nnoremap <C-e> 5<C-e>
@@ -91,6 +92,8 @@ au Syntax {cpp,c,idl} runtime syntax/doxygen.vim
 
 au BufRead,BufNewFile PKGBUILD set ts=2 sts=2 et sw=2
 au BufNewFile,BufRead .Xdefaults* set filetype=xdefaults
+au BufNewFile,BufRead *.less set filetype=less
+au BufNewFile,BufRead *.css set filetype=less
 
 " Completion
 inoremap <Nul> <C-x><C-p>
