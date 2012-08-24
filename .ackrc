@@ -1,0 +1,2 @@
+--type-set=ruby=.ru,.rb,.erb
+--type-add=css=.less
