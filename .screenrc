@@ -25,5 +25,8 @@ altscreen on
 # http://superuser.com/questions/217066/prevent-gnu-screen-from-resizing-display-size
 termcapinfo xterm* 'is=\E[r\E[m\E[2J\E[H\E[?7h\E[?1;4;6l'
 
+# scrollback
+defscrollback 50000
+
 caption always "%{gk}[ %{G}%H %{g}][%= %{wk}%?%-Lw%?%{=b kR}(%{W}%n*%f %t%?(%u)%?%{=b kR})%{= kw}%?%+Lw%?%?%= %{g}][%{Y}%l%{g}]%{=b C}[ %m/%d %c ]%{W}"
 
