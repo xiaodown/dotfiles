@@ -6,4 +6,5 @@ alias egrep='egrep --color=auto'
 alias ls='ls -AlF --color=auto'
 alias l='ls'
 alias v='vim'
+alias tf='tail -f'
 
