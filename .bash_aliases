@@ -7,4 +7,6 @@ alias ls='ls -AlF --color=auto'
 alias l='ls'
 alias v='vim'
 alias tf='tail -f'
+# Enables alias expansion while using sudo
+alias sudo='sudo '
 
