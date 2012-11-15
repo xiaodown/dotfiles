@@ -42,8 +42,8 @@ set wildmode=list:longest
 set wildignore+=*.pyc,.hg,.git,.svn
 
 " Mouse options
-"set mouse=a
-"set mousemodel=popup
+set mouse=a
+set mousemodel=popup
 
 " Spacing and tabbing
 set smarttab
