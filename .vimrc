@@ -67,6 +67,8 @@ let mapleader = ","
 
 " Shortcuts
 au Filetype php        noremap ; :!php -l %<CR>
+au Filetype sh         noremap ; :!bash -n %<CR>
+au Filetype bash       noremap ; :!bash -n %<CR>
 au Filetype ruby       noremap ; :!ruby -c %<CR>
 au Filetype javascript noremap ; :JSLintUpdate<CR>
 
@@ -120,4 +122,6 @@ set hlsearch
 
 " Enable extended % matching
 runtime macros/matchit.vim
+
+call pathogen#runtime_append_all_bundles()
 
