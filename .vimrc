@@ -54,6 +54,20 @@ set shiftwidth=4
 set textwidth=100
 set nowrap
 
+" Split manipulation
+set wmh=0
+nmap + :resize <CR>
+nmap - :resize -1000<CR>
+nmap = :wincmd =<CR>
+nmap [ :wincmd k<CR>:resize<CR>
+nmap ] :wincmd j<CR>:resize<CR>
+
+" Command Timeouts
+set timeout
+set ttimeout
+set ttimeoutlen=10
+set timeoutlen=10
+
 " Tab navigation
 nmap <F4> :tabnew<CR>
 nmap <F5> :tabp<CR>
@@ -94,6 +108,7 @@ au Syntax {cpp,c,idl} runtime syntax/doxygen.vim
 
 au BufRead,BufNewFile PKGBUILD set ts=2 sts=2 et sw=2
 au BufNewFile,BufRead .Xdefaults* set filetype=xdefaults
+au BufNewFile,BufRead *.lss set filetype=less
 au BufNewFile,BufRead *.less set filetype=less
 au BufNewFile,BufRead *.css set filetype=less
 
