@@ -85,7 +85,7 @@ au Filetype sh         noremap ; :!bash -n %<CR>
 au Filetype bash       noremap ; :!bash -n %<CR>
 au Filetype ruby       noremap ; :!ruby -c %<CR>
 au Filetype python     noremap ; :!python -m py_compile %<CR>
-au Filetype javascript noremap ; :JSLintUpdate<CR>
+au Filetype javascript noremap ; :call JSHint()<CR>
 
 " Scrolling speed
 nnoremap <C-e> 5<C-e>
@@ -139,5 +139,5 @@ set hlsearch
 " Enable extended % matching
 runtime macros/matchit.vim
 
-call pathogen#runtime_append_all_bundles()
+execute pathogen#infect()
 
