@@ -1,0 +1,5 @@
+/*jslint browser: true, node: true, regexp: true, nomen: true, white: true */
+/*global jQuery, $, _, require, console, window, document, exports, __dirname, __filename */
+
+"use strict";
+
