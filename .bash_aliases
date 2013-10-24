@@ -14,3 +14,4 @@ fi
 # Enables alias expansion while using sudo
 alias sudo='sudo '
 
+function c() { curl -vvv $@; echo; }
