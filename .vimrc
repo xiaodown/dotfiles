@@ -94,8 +94,8 @@ nnoremap <C-y> 5<C-y>
 " Filetype-specific formatting
 set formatoptions+=t,c,r,o,n
 
-au FileType c,cpp,h set cindent formatoptions+=ro 
-au FileType c set omnifunc=ccomplete#Complete 
+au FileType c,cpp,h set cindent formatoptions+=ro
+au FileType c set omnifunc=ccomplete#Complete
 au FileType css set omnifunc=csscomplete#CompleteCSS
 au FileType html,xhtml,xml set omnifunc=htmlcomplete#CompleteTags tw=0
 au FileType javascript set omnifunc=javascriptcomplete#CompleteJS
@@ -113,6 +113,9 @@ au BufNewFile,BufRead *.lss set filetype=less
 au BufNewFile,BufRead *.less set filetype=less
 au BufNewFile,BufRead *.css set filetype=less
 
+" Trim trailing whitespace on write
+autocmd FileType c,cpp,java,php,python,javascript,json,ruby,markdown autocmd BufWritePre * :%s/\s\+$//e
+
 " Completion
 inoremap <Nul> <C-x><C-p>
 
@@ -126,7 +129,7 @@ hi StatusLineNC term=none cterm=NONE ctermfg=darkgray ctermbg=lightgray
 
 " Folding
 if has("folding")
-    set foldenable 
+    set foldenable
     set foldmethod=marker
     set foldopen=hor,mark,search,tag,undo
 endif
