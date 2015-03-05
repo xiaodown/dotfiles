@@ -16,6 +16,9 @@ shopt -s histappend
 HISTSIZE=1000
 HISTFILESIZE=2000
 
+# This will force prompts in the screen to have color, i think
+force_color_prompt=yes
+
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
 shopt -s checkwinsize

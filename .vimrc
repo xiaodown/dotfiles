@@ -9,7 +9,7 @@ set hidden
 set title
 
 " No annoying beep
-"set visualbell
+set visualbell
 
 " Turn on syntax highlighting
 syntax on
@@ -18,9 +18,9 @@ syntax on
 set background=dark
 
 " Utility features
-set ruler
-set number
-set cursorline
+" set ruler
+" set number
+" set cursorline
 set history=1000
 set bs=2
 
@@ -42,8 +42,8 @@ set wildmode=list:longest
 set wildignore+=*.pyc,.hg,.git,.svn
 
 " Mouse options
-set mouse=a
-set mousemodel=popup
+" set mouse=a
+" set mousemodel=popup
 
 " Spacing and tabbing
 set smarttab
@@ -52,7 +52,7 @@ set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 set textwidth=100
-set nowrap
+" set nowrap
 
 " Split manipulation
 set wmh=0
