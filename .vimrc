@@ -2,6 +2,9 @@ set nocp
 set directory=~/.vim/tmp
 set backupskip=/tmp/*,/private/tmp/*
 
+" For the love of all that is holy, set paste
+set paste
+
 " Manage multiple buffers
 set hidden
 
