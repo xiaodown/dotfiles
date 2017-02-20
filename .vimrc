@@ -32,17 +32,17 @@ set encoding=utf-8
 set termencoding=utf-8
 
 " Turn plugin features on
-filetype on
-filetype plugin on
-filetype indent on
+"filetype on
+"filetype plugin on
+"filetype indent on
 set autoindent
-set showmatch
+"set showmatch
 
 " Bash-like tab completion
-set wildmenu
-set wildchar=<Tab>
-set wildmode=list:longest
-set wildignore+=*.pyc,.hg,.git,.svn
+"set wildmenu
+"set wildchar=<Tab>
+"set wildmode=list:longest
+"set wildignore+=*.pyc,.hg,.git,.svn
 
 " Mouse options
 " set mouse=a
@@ -80,55 +80,55 @@ nmap <F6> :tabn<CR>
 set scrolloff=3
 
 " Map leader to ,
-let mapleader = ","
+" let mapleader = ","
 
 " Shortcuts
-au Filetype php        noremap ; :!php -l %<CR>
-au Filetype sh         noremap ; :!bash -n %<CR>
-au Filetype bash       noremap ; :!bash -n %<CR>
-au Filetype ruby       noremap ; :!ruby -c %<CR>
-au Filetype python     noremap ; :!python -m py_compile %<CR>
-au Filetype javascript noremap ; :JSLintUpdate<CR>
-
+"au Filetype php        noremap ; :!php -l %<CR>
+"au Filetype sh         noremap ; :!bash -n %<CR>
+"au Filetype bash       noremap ; :!bash -n %<CR>
+"au Filetype ruby       noremap ; :!ruby -c %<CR>
+"au Filetype python     noremap ; :!python -m py_compile %<CR>
+"au Filetype javascript noremap ; :JSLintUpdate<CR>
+"
 " Scrolling speed
-nnoremap <C-e> 5<C-e>
-nnoremap <C-y> 5<C-y>
+"nnoremap <C-e> 5<C-e>
+"nnoremap <C-y> 5<C-y>
 
 " Filetype-specific formatting
-set formatoptions+=t,c,r,o,n
-
-au FileType c,cpp,h set cindent formatoptions+=ro
-au FileType c set omnifunc=ccomplete#Complete
-au FileType css set omnifunc=csscomplete#CompleteCSS
-au FileType html,xhtml,xml set omnifunc=htmlcomplete#CompleteTags tw=0
-au FileType javascript set omnifunc=javascriptcomplete#CompleteJS
-au FileType make set noexpandtab shiftwidth=8
-au FileType php set omnifunc=phpcomplete#CompletePHP
-au FileType python set omnifunc=pythoncomplete#Complete et sw=4 sts=4 ts=4 ai
-au FileType ruby set omnifunc=rubycomplete#Complete
-au FileType tex SPCheck
-au FileType tex let dialect='US'
-au Syntax {cpp,c,idl} runtime syntax/doxygen.vim
-
-au BufRead,BufNewFile PKGBUILD set ts=2 sts=2 et sw=2
-au BufNewFile,BufRead .Xdefaults* set filetype=xdefaults
-au BufNewFile,BufRead *.lss set filetype=less
-au BufNewFile,BufRead *.less set filetype=less
-au BufNewFile,BufRead *.css set filetype=less
-
+"set formatoptions+=t,c,r,o,n
+"
+"au FileType c,cpp,h set cindent formatoptions+=ro
+"au FileType c set omnifunc=ccomplete#Complete
+"au FileType css set omnifunc=csscomplete#CompleteCSS
+"au FileType html,xhtml,xml set omnifunc=htmlcomplete#CompleteTags tw=0
+"au FileType javascript set omnifunc=javascriptcomplete#CompleteJS
+"au FileType make set noexpandtab shiftwidth=8
+"au FileType php set omnifunc=phpcomplete#CompletePHP
+"au FileType python set omnifunc=pythoncomplete#Complete et sw=4 sts=4 ts=4 ai
+"au FileType ruby set omnifunc=rubycomplete#Complete
+"au FileType tex SPCheck
+"au FileType tex let dialect='US'
+"au Syntax {cpp,c,idl} runtime syntax/doxygen.vim
+"
+"au BufRead,BufNewFile PKGBUILD set ts=2 sts=2 et sw=2
+"au BufNewFile,BufRead .Xdefaults* set filetype=xdefaults
+"au BufNewFile,BufRead *.lss set filetype=less
+"au BufNewFile,BufRead *.less set filetype=less
+"au BufNewFile,BufRead *.css set filetype=less
+"
 " Trim trailing whitespace on write
 autocmd FileType c,cpp,java,php,python,javascript,json,ruby,markdown autocmd BufWritePre * :%s/\s\+$//e
 
 " Completion
-inoremap <Nul> <C-x><C-p>
+" inoremap <Nul> <C-x><C-p>
 
 " Status line settings
-set laststatus=2
-set statusline=%-3.3n\ %f%(\ %r%)%(\ %#WarningMsg#%m%0*%)%=(%l/%L,\ %c)\ %P\ [%{&encoding}:%{&fileformat}]%(\ %w%)\ %y
-set shortmess+=aI
+" set laststatus=2
+" set statusline=%-3.3n\ %f%(\ %r%)%(\ %#WarningMsg#%m%0*%)%=(%l/%L,\ %c)\ %P\ [%{&encoding}:%{&fileformat}]%(\ %w%)\ %y
+" set shortmess+=aI
 
-hi StatusLine term=inverse cterm=NONE ctermfg=red ctermbg=white
-hi StatusLineNC term=none cterm=NONE ctermfg=darkgray ctermbg=lightgray
+" hi StatusLine term=inverse cterm=NONE ctermfg=red ctermbg=white
+" hi StatusLineNC term=none cterm=NONE ctermfg=darkgray ctermbg=lightgray
 
 " Folding
 if has("folding")
@@ -145,5 +145,5 @@ set hlsearch
 " Enable extended % matching
 runtime macros/matchit.vim
 
-execute pathogen#infect()
+" execute pathogen#infect()
 
